@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Museo Virtual - Revolución China</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    header {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.8)),
+        url("https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?auto=format&fit=crop&w=2000&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    header h1 {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 23px;
+      color: #ddd;
+    }
+
+    .boton {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 25px;
+      background: #c62828;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 10%;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 35px;
+    }
+
+    .texto {
+      max-width: 900px;
+      margin: auto;
+      font-size: 19px;
+      line-height: 1.7;
+      color: #ddd;
+    }
+
+    .imagen {
+      width: 100%;
+      max-width: 900px;
+      height: 450px;
+      object-fit: cover;
+      display: block;
+      margin: 30px auto;
+      border-radius: 12px;
+    }
+
+    .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .tarjeta {
+      background: #202020;
+      padding: 30px;
+      border-radius: 15px;
+      border: 1px solid #444;
+    }
+
+    .tarjeta h3 {
+      color: #e53935;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    .tarjeta p {
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    .objeto {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .objeto img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 25px;
+    }
+
+    .audio {
+      max-width: 700px;
+      margin: auto;
+      background: #202020;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .pregunta {
+      background: #7b1515;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .pregunta h2 {
+      margin-bottom: 20px;
+    }
+
+    .pregunta p {
+      font-size: 25px;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #080808;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 38px;
+      }
+
+      header p {
+        font-size: 18px;
+      }
+
+      section {
+        padding: 50px 7%;
+      }
+
+      .imagen {
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- PORTADA -->
+
+  <header>
+    <div>
+      <h1>Museo Virtual de la Revolución China</h1>
+
+      <p>Grupo 5 – El pueblo trabajador</p>
+
+      <p>Propaganda, poder y vida cotidiana</p>
+
+      <a href="#inicio" class="boton">Entrar al museo</a>
+    </div>
+  </header>
+
+
+  <!-- INTRODUCCIÓN -->
+
+  <section id="inicio">
+
+    <h2>Los campesinos y trabajadores</h2>
+
+    <div class="texto">
+
+      <p>
+        Durante la Revolución China, los campesinos y trabajadores
+        tenían un lugar muy importante. Los campesinos trabajaban
+        la tierra y producían alimentos, mientras que los trabajadores
+        trabajaban en fábricas y otros lugares.
+      </p>
+
+      <br>
+
+      <p>
+        La propaganda los mostraba como personas fuertes,
+        trabajadoras y unidas. Se buscaba transmitir que todos
+        tenían que trabajar juntos para construir una nueva sociedad.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROPAGANDA -->
+
+  <section>
+
+    <h2>La propaganda</h2>
+
+    <img
+      class="imagen"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Long_Live_the_Great_Unity_of_the_People_of_the_World.jpg/800px-Long_Live_the_Great_Unity_of_the_People_of_the_World.jpg"
+      alt="Propaganda china"
+    >
+
+    <div class="texto">
+
+      <p>
+        En las imágenes de propaganda, los trabajadores y campesinos
+        aparecían felices, unidos y orgullosos de su trabajo.
+      </p>
+
+      <br>
+
+      <p>
+        El mensaje era que el pueblo apoyaba la revolución y que
+        el esfuerzo de cada persona ayudaba al crecimiento del país.
+      </p>
+
+      <br>
+
+      <p>
+        Pero estas imágenes no mostraban toda la realidad. Muchas
+        veces dejaban afuera problemas como la falta de alimentos,
+        las dificultades económicas y las condiciones difíciles
+        de vida.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROPAGANDA VS REALIDAD -->
+
+  <section>
+
+    <h2>Propaganda frente a vida cotidiana</h2>
+
+    <div class="tarjetas">
+
+      <div class="tarjeta">
+
+        <h3>Lo que mostraba</h3>
+
+        <p>
+          Los trabajadores y campesinos aparecían unidos,
+          fuertes y orgullosos de su trabajo. Se mostraba
+          una sociedad donde todos colaboraban.
+        </p>
+
+      </div>
+
+      <div class="tarjeta">
+
+        <h3>Lo que quedaba afuera</h3>
+
+        <p>
+          La propaganda no mostraba todos los problemas
+          de la vida cotidiana, como las dificultades
+          económicas, la falta de alimentos o las malas
+          condiciones de vida.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- OBJETO -->
+
+  <section>
+
+    <h2>Objeto simbólico</h2>
+
+    <div class="objeto">
+
+      <img
+        src="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?auto=format&fit=crop&w=800&q=80"
+        alt="Herramienta de trabajo"
+      >
+
+      <h3>La azada</h3>
+
+      <br>
+
+      <p class="texto">
+        Elegimos una azada porque representa el trabajo de los
+        campesinos. Era una herramienta usada para trabajar la
+        tierra y representa el esfuerzo de las personas que
+        producían alimentos.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- AUDIOGUIA -->
+
+  <section>
+
+    <h2>🎧 Audioguía</h2>
+
+    <div class="audio">
+
+      <p>
+        Bienvenidos a nuestra sala sobre el pueblo trabajador.
+        Durante la Revolución China, la propaganda mostraba a
+        los campesinos y trabajadores como personas fuertes,
+        unidas y trabajadoras. Se buscaba mostrar que todos
+        ayudaban a construir una nueva sociedad. Pero la
+        propaganda no mostraba todos los problemas de la vida
+        cotidiana, por eso es importante comparar esas imágenes
+        con la realidad.
+      </p>
+
+      <!--
+        Cuando tengan el audio, suban el archivo a GitHub
+        y cambien "audioguia.mp3" por el nombre del archivo.
+      -->
+
+      <audio controls>
+        <source src="audioguia.mp3" type="audio/mpeg">
+        Tu navegador no puede reproducir este audio.
+      </audio>
+
+    </div>
+
+  </section>
+
+
+  <!-- FUENTE DE CONTRASTE -->
+
+  <section>
+
+    <h2>Fuente de contraste</h2>
+
+    <div class="texto">
+
+      <p>
+        Para entender mejor este período podemos comparar las
+        imágenes de propaganda con fotografías, testimonios y
+        datos históricos sobre la vida de los campesinos y
+        trabajadores.
+      </p>
+
+      <br>
+
+      <p>
+        De esta manera podemos ver que la propaganda mostraba
+        una parte de la realidad, pero no necesariamente todo
+        lo que estaba pasando.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONCLUSIÓN -->
+
+  <section class="pregunta">
+
+    <h2>Para pensar</h2>
+
+    <p>
+      ¿La propaganda mostraba cómo era realmente la vida de
+      los trabajadores y campesinos, o mostraba cómo el gobierno
+      quería que se viera la sociedad?
+    </p>
+
+  </section>
+
+
+  <footer>
+
+    Museo Virtual de la Revolución China · Grupo 5
+
+  </footer>
+
+</body>
+</html>
